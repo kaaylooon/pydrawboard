@@ -5,8 +5,8 @@ from PIL import Image, ImageTk
 import random
 
 root = tk.Tk()
-root.title('Drawboard')
-root.geometry("800x600")
+root.title('PyDrawboard')
+
 root.attributes("-fullscreen", True)
 root.bind("<Escape>", lambda e: root.destroy())
 root.resizable(width=False, height=False)
@@ -109,11 +109,11 @@ botoes_frame = tk.Frame(root, bg=color0)
 
 lateral_frame = tk.Frame(root, bg=color0)
 
-img_color = ImageTk.PhotoImage(Image.open('color_pick.png'))
-img_up = ImageTk.PhotoImage(Image.open('arrow_up.png'))
-img_down = ImageTk.PhotoImage(Image.open('arrow_down.png'))
-img_more = ImageTk.PhotoImage(Image.open('more.png'))
-img_random = ImageTk.PhotoImage(Image.open('random.png'))
+img_color = ImageTk.PhotoImage(Image.open('src/color_pick.png'))
+img_up = ImageTk.PhotoImage(Image.open('src/arrow_up.png'))
+img_down = ImageTk.PhotoImage(Image.open('src/arrow_down.png'))
+img_more = ImageTk.PhotoImage(Image.open('src/more.png'))
+img_random = ImageTk.PhotoImage(Image.open('src/random.png'))
 
 btn_1 = tk.Button(
     lateral_frame,
